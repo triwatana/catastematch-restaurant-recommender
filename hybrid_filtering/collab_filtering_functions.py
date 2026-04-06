@@ -11,9 +11,9 @@ from scipy.sparse import csr_matrix
 from implicit import als
 import numpy as np
 
-restaurant_path = 'CA_Restaurants.csv'
-review_path = 'CA_Reviews.csv'
-user_path = 'CA_Users.csv'
+restaurant_path = 'data/processed/CA_Restaurants.csv'
+review_path = 'data/processed/CA_Reviews.csv'
+user_path = 'data/processed/CA_Users.csv'
 
 restaurants = pd.read_csv(restaurant_path).iloc[:,1:]
 reviews = pd.read_csv(review_path).iloc[:,1:]

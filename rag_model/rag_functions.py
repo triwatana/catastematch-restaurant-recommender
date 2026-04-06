@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import chromadb
 from sentence_transformers import SentenceTransformer
-from typing import Dict, List, Optional
+from typing import Dict
 
 
 # ─────────────────────────────────────────
