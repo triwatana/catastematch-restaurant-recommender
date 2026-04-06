@@ -217,3 +217,18 @@ yelp_academic_dataset_*.json
 __pycache__/
 *.pyc
 .env
+
+# Data
+data/
+*.csv
+
+# Models
+ca_chroma_db/
+*.pkl
+
+# Python
+__pycache__/
+*.pyc
+
+# Env
+.venv/
