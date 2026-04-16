@@ -2,24 +2,23 @@
 pandas
 numpy
 scikit-learn
+scipy
 
-# NLP
-spacy
+# NLP / Embeddings
 sentence-transformers
-openai
-langchain
-re
 
 # Web App
 streamlit
-streamlit-folium
 
-# Visualization
+# Visualization (used in notebooks/EDA)
 matplotlib
 seaborn
 
-# API
-requests
-
 # Vector DB
 chromadb
+
+# Recommender System (ALS / implicit CF)
+implicit
+
+# Utilities
+tqdm
