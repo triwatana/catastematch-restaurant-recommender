@@ -1,25 +1,29 @@
 # Core
-pandas
-numpy
-scikit-learn
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.1
+scipy==1.13.1
+gdown==6.0.0
 
 # NLP
-spacy
 sentence-transformers
-openai
-langchain
-re
+transformers==4.39.0
 
 # Web App
-streamlit
-streamlit-folium
+streamlit==1.32.0
 
 # Visualization
 matplotlib
 seaborn
 
 # API
-requests
+fastapi==0.110.0
 
 # Vector DB
-chromadb
+chromadb==1.5.5
+
+# Recommender System
+implicit==0.7.2
+
+# Testing
+pytest==8.1.0
