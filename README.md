@@ -137,7 +137,7 @@ preferences of similar users.
 ```
 TasteMatchCA/
 │
-├── 📄 app.py                         # Streamlit application
+├── 📄 streamlit_app.py               # Streamlit application
 ├── 📄 content_model.py               # Content-based filtering
 ├── 📄 collab_filter_functions.py     # Collaborative filtering
 │
@@ -162,7 +162,31 @@ TasteMatchCA/
 
 ## 🚀 How to Run
 
-> To be completed.
+**Requirements:** Python 3.11+
+
+1. **Clone the repo**
+```bash
+   git clone https://github.com/triwatana/catastematch-restaurant-recommender.git
+   cd catastematch-restaurant-recommender
+```
+
+2. **Create a virtual environment and install dependencies**
+```bash
+   python -m venv .venv
+   source .venv/bin/activate      # Windows: .venv\Scripts\activate
+   pip install -r requirements.txt
+```
+
+3. **Launch the app** (run from the repo root, since data paths are relative)
+```bash
+   streamlit run streamlit_app.py
+```
+
+The app opens at `http://localhost:8501`. The persisted ChromaDB vector store (`ca_chroma_db/`) and the processed data (`data/processed/`) load automatically. On first run, the `all-MiniLM-L6-v2` embedding model downloads from Hugging Face, which can take a minute.
+
+**Try it:** search for something like *"cheap tacos in Santa Barbara"* or *"romantic dinner with outdoor seating."*
+
+**Troubleshooting:** if `implicit` (used for ALS) fails to install with pip, install it with conda: `conda install -c conda-forge implicit`.
 
 ---
 
